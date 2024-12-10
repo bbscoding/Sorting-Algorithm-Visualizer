@@ -1,0 +1,73 @@
+#tray
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height : 77vh;
+    margin-top: 2vh;
+}
+
+#sortingButton
+{
+    
+    padding : 2vh;
+    background-color: rgb(16, 137, 58);
+    color : white;
+   
+    border: transparent;
+    border-radius: 2vh;
+    margin-left: 30vh;
+    padding-left: 3vh;
+    padding-right : 3vh;
+    
+}
+
+
+#stopButton
+{
+    
+    padding : 2vh;
+    background-color: red;
+    color : white;
+   
+    border: transparent;
+    border-radius: 2vh;
+    margin-left : 0.9vh;
+}
+#stopButton:hover
+{
+opacity: 70%;
+}
+#sortingButton:hover
+{
+    opacity: 70%;
+}
+#speed-wrapper
+{
+    background-image: linear-gradient(to right , gold , orange, rgb(255, 66, 66));
+    padding : 1.6vh;
+    margin-left: 1vh;
+    border-radius: 2vh;
+}
+#speed
+{
+    margin-left: 1.5vh;
+}
+.screen
+{
+    position: relative;
+    height : 100%;
+    width : 98%;
+    background-color: rgb(234, 234, 234);
+}
+
+.speed-slider
+{
+   width: 30vh;
+   direction: ltr;
+   accent-color: black;
+   cursor: ew-resize;
+   height : 0.5vh;
+   background-image: linear-gradient(to right , white 0% ,  white  50%, red 51% ,  red 100%);
+            
+}
