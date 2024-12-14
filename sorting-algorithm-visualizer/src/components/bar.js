@@ -1,6 +1,5 @@
 import React from "react";
-import "../main.css"
-import "../styles/bar.css"
+import "../styles/Bar.css"
 function Bar(props)
 {
 

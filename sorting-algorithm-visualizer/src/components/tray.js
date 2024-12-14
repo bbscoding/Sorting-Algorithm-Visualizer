@@ -1,16 +1,17 @@
 import React, { useContext, useEffect, useState } from "react";
 import "../styles/Tray.css"
-import { DataContext } from "./form"
-import Bar from "./bar"
+import { DataContext } from "./Form"
+import Bar from "./Bar"
 import BubbleSort from "../algorithms/BubbleSort";
 import cocktailShakerSort from "../algorithms/cocktailShakerSort";
 import selectionSort from "../algorithms/selectionSort";
 import insertionSort from "../algorithms/insertionSort";
 const Tray = (props) => {
     const data = useContext(DataContext)
-    const [speed, setSpeed] = useState(0)
     const [jump, setJump] = useState(0)
     const [sliderValue, setSliderValue] = useState(51)
+    // console.log(speedValue)
+    console.log(props)
 
     function sort() {
         console.log("This is from the sorting function ")
@@ -25,22 +26,22 @@ const Tray = (props) => {
         switch (props.algorithm) {
             case "bubbleSort":
                 {
-                    BubbleSort(props.data, props.setData, speed, jump)
+                    BubbleSort(props.data, props.setData, props.speedValue, jump)
                     break;
                 }
             case "selectionSort":
                 {
-                    selectionSort(props.data, props.setData, speed, jump)
+                    selectionSort(props.data, props.setData, props.speedValue, jump)
                     break;
                 }
             case "insertionSort":
                 {
-                    insertionSort(props.data, props.setData, speed, jump)
+                    insertionSort(props.data, props.setData, props.speedValue, jump)
                     break;
                 }
             case "cocktailShakerSort":
                 {
-                    cocktailShakerSort(props.data, props.setData, speed, jump)
+                    cocktailShakerSort(props.data, props.setData, props.speedValue, jump)
                     break;
                 }
         }

@@ -9,17 +9,14 @@
 
 #sortingButton
 {
-    
     padding : 2vh;
     background-color: rgb(16, 137, 58);
     color : white;
-   
     border: transparent;
     border-radius: 2vh;
-    margin-left: 30vh;
     padding-left: 3vh;
     padding-right : 3vh;
-    
+    margin-left: 30px;
 }
 
 

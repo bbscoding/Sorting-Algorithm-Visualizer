@@ -2,7 +2,7 @@ import sleep from "./sleep";
 import greenLayer from "./greenLayer";
 import inputOn from "./inputOn";
 async function BubbleSort(data, setData, speed, jump) {
-
+  console.log(speed)
   let buffer = [...data]
 
   let counter = 0
@@ -33,7 +33,7 @@ async function BubbleSort(data, setData, speed, jump) {
         buffer[j] = buffer[j + 1];
         buffer[j + 1] = temp;
 
-        await sleep(1)
+        await sleep(speed)
 
         x.style.backgroundColor = "black"
         y.style.backgroundColor = "black"
